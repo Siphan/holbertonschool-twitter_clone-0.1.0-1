@@ -103,9 +103,6 @@ a {
 	vertical-align: top;
 }
 
-li {
-}
-
 #article {
 	width: 735px;
 	background-color: #ffffff;
@@ -133,10 +130,16 @@ li {
 	margin-bottom: 0;
 }
 
-h4, h2 {
+h4 {
 	margin: 0;
 	padding: 5px 0 0 0;
 	color: #292929;
+}
+
+h2 {
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: #fafafa;
 }
 
 p {
@@ -169,7 +172,8 @@ p {
 #aside {
 	width: 257px;
 	height: 100vh;
-	background-color: #23B9EB;
+	background-color: #2D3047;
+	color: #fafafa;
 	display: inline-block;
 	vertical-align: top;
 	float: left;
@@ -213,10 +217,10 @@ p {
 
 .user_summary {
 	min-height: 120px;
-        background-color: #A5B3B8;
-        padding: 15px;
-        margin-bottom: 15px;
-        box-shadow: 5px 5px 10px 0 #585C5E;
+    background-color: #A5B3B8;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px 0 #585C5E;
 }
 
 .user_summary_image {
