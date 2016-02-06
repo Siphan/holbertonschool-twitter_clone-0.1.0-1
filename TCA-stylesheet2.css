@@ -81,6 +81,21 @@ a {
 	text-decoration: underline;
 }
 
+#octopus-link {
+	height: 40px;
+	width: 100%;
+	background-color: #D14353;
+	text-align: center;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 1.2em;
+}
+
+#flat-octopus {
+	height: 35px;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
 #outerbody {
 	min-height: 700px;
 	margin: 0;
