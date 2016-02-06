@@ -55,12 +55,13 @@ a:hover {
 }
 
 #kitten {
-	width: 100%;
+	width: 75%;
 }
 
 #tagline {	
 	padding-top: 5px;
 	margin: 0;
+	font-family: 'Architects Daughter', cursive;
 }
 
 #links-topright {
@@ -163,7 +164,7 @@ p {
 	color: #ffffff;
 }
 
-/* here begins CSS for user page */
+/* CSS for user page */
 
 #profile_aside {
 	width: 245px;
@@ -206,5 +207,11 @@ p {
 
 .username_link {
 	color: #222222;	
+}
+
+/* css for iof */
+
+h1 {
+	font-family: 'Architects Daughter', cursive;
 }
 
