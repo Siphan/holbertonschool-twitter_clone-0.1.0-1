@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
 	body {
 		height: 100%;
 		font-family: 'Raleway', sans-serif;
@@ -9,18 +9,60 @@
 		width: 100%;
 		background-color: #2D3047;
 		color: #fafafa;
-		vertical-align: top;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	#article {
 		width: 100%;
 		background-color: #ffffff;
 	}
-
+        #welcome-box {
+                text-align: center;
+                background-color: #222222;
+                vertical-align: bottom;
+        }
+        #welcome-box > p {
+                color: #ffffff;
+                padding: 0px;
+                padding-top: 30px;
+        }
 
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
+        body {
+                height: 100%;
+                font-family: 'Raleway', sans-serif;
+                background-color: #ffcccc;
+        }
+
+        #aside {
+                width: 100%;
+                background-color: #2D3047;
+                color: #fafafa;
+		padding-top:30px;
+		padding-bottom:30px;
+        }
+
+        #article {
+                width: 100%;
+                background-color: #ffffff;
+        }
+
+	#welcome-box {
+		text-align: center;
+		background-color: #222222;
+		vertical-align: bottom;
+	}
+	#welcome-box > p {
+		color: #ffffff;
+		padding: 0px;
+		padding-top: 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
 	body {
 		margin: auto;
 		padding: 0;
@@ -36,17 +78,23 @@
 		color: #fafafa;
 		display: inline-block;
 		vertical-align: top;
-		float: left;
+		float: right;
 	}
 	#article {
 		width: 735px;
 		background-color: #ffffff;
 		height: 100vh;
 		display: inline-block;
-		float: left;
+		float: right;
 	}
-
-
+	#welcome-box {
+		position: fixed;
+		right: 0;
+		top: 95%;
+		padding: 7px;
+		background-color: #222222;
+		color: #ffffff;
+	}
 }
 
 #header {
@@ -195,15 +243,6 @@ p {
 .best_user_bio {
 	padding: 8px;
 	text-align: center;
-}
-
-#welcome-box {
-	position: fixed;
-	right: 0;
-	top: 95%;
-	padding: 7px;
-	background-color: #222222;
-	color: #ffffff;
 }
 
 /* CSS for user page */
