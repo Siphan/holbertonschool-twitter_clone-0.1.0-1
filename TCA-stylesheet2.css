@@ -1,17 +1,52 @@
-html {
-	width: 992px;
-	margin: auto;
-	padding: 0;
-	height: 99%;
+@media screen and (max-width: 1000px) {
+	body {
+		height: 100%;
+		font-family: 'Raleway', sans-serif;
+		background-color: #ffcccc;
+	}
+
+	#aside {
+		width: 100%;
+		background-color: #2D3047;
+		color: #fafafa;
+		vertical-align: top;
+	}
+
+	#article {
+		width: 100%;
+		background-color: #ffffff;
+	}
+
+
 }
 
-body {
-	margin: 0;
-	padding: 0;
-	width: 992px;
-	height: 100%;
-	font-family: 'Raleway', sans-serif;
-	background-color: #ffcccc;
+@media screen and (min-width: 1001px) {
+	body {
+		margin: auto;
+		padding: 0;
+		width: 992px;
+		height: 100%;
+		font-family: 'Raleway', sans-serif;
+		background-color: #ffcccc;
+	}
+	#aside {
+		width: 257px;
+		height: 100vh;
+		background-color: #2D3047;
+		color: #fafafa;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+	}
+	#article {
+		width: 735px;
+		background-color: #ffffff;
+		height: 100vh;
+		display: inline-block;
+		float: left;
+	}
+
+
 }
 
 #header {
@@ -104,14 +139,6 @@ a {
 	vertical-align: top;
 }
 
-#article {
-	width: 735px;
-	background-color: #ffffff;
-	height: 100vh;
-	display: inline-block;
-	float: left;
-}
-
 .user {
 	min-height: 120px;
 	background-color: #ffffff;
@@ -168,16 +195,6 @@ p {
 .best_user_bio {
 	padding: 8px;
 	text-align: center;
-}
-
-#aside {
-	width: 257px;
-	height: 100vh;
-	background-color: #2D3047;
-	color: #fafafa;
-	display: inline-block;
-	vertical-align: top;
-	float: left;
 }
 
 #welcome-box {
