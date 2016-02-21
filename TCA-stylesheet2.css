@@ -1,3 +1,139 @@
+/****** phone-sized screen ******/
+@media (max-width: 767px) {
+body {
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background-color: #ffcccc;
+}
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	display: flex;
+	flex-direction: column;
+}
+
+#aside {
+	width: 100%;
+	background-color: #2D3047;
+	color: #fafafa;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#article {
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+
+#welcome-box {
+	text-align: center;
+    background-color: #222222;
+    vertical-align: bottom;
+}
+
+#welcome-box > p {
+    color: #ffffff;
+    padding: 0px;
+    padding-top: 30px;
+}
+
+/******************** responsive user page *********/
+#profile_aside {
+	width: 100%;
+	background-color: #2D3047;
+	text-align: center;
+	padding: 10px;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+}
+
+/********** tablet-sized screen *********/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffcccc;
+}
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	display: flex;
+	flex-direction: column;
+}
+
+#aside {
+    width: 67%;
+    background-color: #2D3047;
+    color: #fafafa;
+	padding-top:30px;
+	padding-bottom:30px;
+	height: 330px;
+	margin-bottom: -390px;
+	display: flex;
+	flex-direction: column;
+}
+
+#article {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-box {
+	width: 33%;
+	position: relative;
+	left: 67%;	
+	height: 390px;
+	text-align: center;
+	background-color: #222222;
+}
+
+#welcome-box > p {
+	color: #ffffff;
+	padding: 0px;
+	padding-top: 30px;
+}
+
+/********* responsive user page ************/
+#profile_aside {
+	width: 67%;
+	height: 390px;
+	background-color: #2D3047;
+	margin-bottom: -390px;
+	text-align: center;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+}
+
+/********** anything wider than a tablet screen size **********/
+@media (min-width: 992px) {
 body {
 	margin: auto;
 	padding: 0;
@@ -6,22 +142,35 @@ body {
 	font-family: 'Raleway', sans-serif;
 	background-color: #ffcccc;
 }
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	display: flex;
+	flex-direction: row;
+}
+
+#article {
+	width: 735px;
+	background-color: #ffffff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 #aside {
 	width: 257px;
 	height: 100vh;
 	background-color: #2D3047;
 	color: #fafafa;
-	display: inline-block;
+	display: flex;
 	vertical-align: top;
-	float: right;
+	flex-direction: column;
 }
-#article {
-	width: 735px;
-	background-color: #ffffff;
-	height: 100vh;
-	display: inline-block;
-	float: right;
-}
+
+/********* BETA TESTING BOX **********/
 #welcome-box {
 	position: fixed;
 	right: 0;
@@ -30,10 +179,32 @@ body {
 	background-color: #222222;
 	color: #ffffff;
 }
+
 #welcome-box > p {
 	color: #ffffff;
 }
 
+/*********** responsive user page *********/
+#profile_aside {
+	width: 257px;
+	height: 100vh;
+	background-color: #2D3047;
+	text-align: center;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 735px;
+	height: 100vh;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+}
+/********** BEGIN UNIVERSAL CSS ***********/
+/******** HEADER CSS ********/
 #header {
 	display: flex;
 	height: 200px;
@@ -43,13 +214,27 @@ body {
 }
 
 #right-menus {
-	
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: space-between;
 	padding: 5px;
 }
 
+#logo {
+	margin: 15px;
+}
+
+#kitten {
+	width: 75%;
+}
+
+#tagline {	
+	padding-top: 5px;
+	margin: 0;
+	font-family: 'Architects Daughter', cursive;
+}
+
+/******** 3 NAVY BUTTONS **********/
 #menu {
 	display: flex;
 	
@@ -80,29 +265,12 @@ a {
 	background-color: #2D3047;
 }
 
-#logo {
-	margin: 15px;
-}
-
-#kitten {
-	width: 75%;
-}
-
-#tagline {	
-	padding-top: 5px;
-	margin: 0;
-	font-family: 'Architects Daughter', cursive;
-}
 
 #links-topright {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 }	
-
-.link-box {
-/* no style */
-}
 
 #octopus-link {
 	height: 40px;
@@ -120,12 +288,9 @@ a {
 	margin-top: -3px;
 }
 
-#outerbody {
-	min-height: 700px;
-	margin: 0;
-	padding: 0;
-	vertical-align: top;
-}
+/******* HEADER DONE - START MAIN BODY *********/
+
+
 
 .user {
 	min-height: 120px;
@@ -164,6 +329,7 @@ p {
 	color: #292929;
 }
 
+
 #aside_title {
 	text-align: center;
 }
@@ -174,7 +340,6 @@ p {
 }
 
 .best-user-photo {
-	display: inline-block;
 	height: 100px;
 	width: 110px;
 	border: 2px solid #fafafa;
@@ -185,17 +350,7 @@ p {
 	text-align: center;
 }
 
-/* CSS for user page */
-
-#profile_aside {
-	width: 245px;
-	height: 100vh;
-	background-color: #2D3047;
-	text-align: center;
-	padding: 10px;
-	color: #fafafa;
-	float: left;
-}
+/******** CSS for user page ************/
 
 #profile_aside > p {
 	color: #fafafa;
@@ -203,21 +358,16 @@ p {
 
 #profile_photo_wrapper {
 	text-align: center;
-	display: inline-block;
 }
 
 #profile_photo {
-	width: 90%;
+	height: 100px;
+	width: 110px;
 	border: 2px solid #fafafa;
 }
 
-#profile_statuses {
-	float: left;
-	width: 727px;
-	height: 100vh;
-}
 
-/* css for all users */
+/*********** css for all users **************/
 
 #user_list {
 	min-height: 700px;
@@ -242,7 +392,7 @@ p {
 	color: #222222;	
 }
 
-/* css for iof */
+/*********** css for iof *************/
 
 h1 {
 	font-family: 'Architects Daughter', cursive;
