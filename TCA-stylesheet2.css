@@ -404,6 +404,29 @@ h1 {
 	text-align: center;
 }
 
+/********** post status css *********/
+
+#submit_status_form {
+	display: none;
+	width: 100%;
+	height: 300px;
+	background: #fff;
+}
+
+#status_form {
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#status_form_text {
+	width: 75%;
+	height: 30px;
+}
+
 
 /********** css for status button material icon *********/
 

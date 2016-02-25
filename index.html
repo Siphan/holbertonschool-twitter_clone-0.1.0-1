@@ -5,6 +5,7 @@
 	<link type="text/css" rel="stylesheet" href="TCA-stylesheet2.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="toggle-post.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -36,13 +37,18 @@
 			</div>
 		</div>
 <!-- HEADER ENDS -->
-		<div id="post_status">
-                	 <i class="material-icons">add</i>
-                </div>
-
 <!-- MAIN BODY BEGIN -->
 		<div id="outerbody">
 				<div id="article">
+					<div id="post_status">
+			                        <i onclick="plus_clicked()" class="material-icons">add</i>
+			                </div>
+					<div id="submit_status_form">
+						<form id="status_form">
+							<input type="text" id="status_form_text"></input>
+							<i id="button" onclick="arrow_clicked()" class="material-icons">trending_flat</i>
+						</form>
+					</div>
 					<div class="user">
 						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
 						<h4>USER NAME - DATE AND TIME</h4>
