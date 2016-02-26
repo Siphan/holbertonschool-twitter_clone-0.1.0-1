@@ -47,6 +47,10 @@
 						<form id="status_form">
 							<input type="text" id="status_form_text"></input>
 							<i id="button" onclick="arrow_clicked()" class="material-icons">trending_flat</i>
+							<div id="disgusting">
+							<input type="checkbox" value="Add location">Add Location</input>
+							<input type="submit" value="Post"></input>
+							</div>
 						</form>
 					</div>
 					<div class="user">
@@ -96,7 +100,7 @@
 					</div>
 				</div>
 		</div>
-		<div id="welcome-box"><p>Welcome! This application is in beta<p></div>
+		<div onclick="hideDisgusting()" id="welcome-box"><p>Welcome! This application is in beta<p></div>
 <!-- MAIN BODY ENDS -->
 	</div>
 </body>
