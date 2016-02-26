@@ -3,7 +3,7 @@
 /****** phone-sized screen ******/
 @media (max-width: 767px) {
 body {
-	height: 100%;
+	min-height: 100%;
 	font-family: 'Raleway', sans-serif;
 	background-color: #ffcccc;
 }
@@ -67,7 +67,7 @@ body {
 /********** tablet-sized screen *********/
 @media screen and (min-width: 768px) and (max-width: 991px) {
 body {
-    height: 100%;
+    min-height: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #ffcccc;
 }
@@ -85,12 +85,12 @@ body {
     width: 67%;
     background-color: #2D3047;
     color: #fafafa;
-	padding-top:30px;
+/*	padding-top:30px;
 	padding-bottom:30px;
 	height: 330px;
 	margin-bottom: -390px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; */
 }
 
 #article {
@@ -140,7 +140,7 @@ body {
 	margin: auto;
 	padding: 0;
 	width: 992px;
-	height: 100%;
+	min-height: 100%;
 	font-family: 'Raleway', sans-serif;
 	background-color: #ffcccc;
 }
@@ -157,14 +157,14 @@ body {
 #article {
 	width: 735px;
 	background-color: #ffffff;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
 #aside {
 	width: 257px;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #2D3047;
 	color: #fafafa;
 	display: flex;
@@ -189,7 +189,7 @@ body {
 /*********** responsive user page *********/
 #profile_aside {
 	width: 257px;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #2D3047;
 	text-align: center;
 	color: #fafafa;
@@ -199,7 +199,7 @@ body {
 
 #profile_statuses {
 	width: 735px;
-	height: 100vh;
+	min-height: 100vh;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
@@ -409,7 +409,7 @@ h1 {
 #submit_status_form {
 	display: none;
 	width: 100%;
-	height: 300px;
+	height: 150px;
 	background: #fff;
 }
 
