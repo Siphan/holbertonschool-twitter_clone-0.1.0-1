@@ -433,8 +433,13 @@ input[type=text] {
 	color: #222;
 	font-size: 14px;
 	padding-left: 10px;
+	border: none;
+	background-color: #ffcccc;
 }
 
+input[type=text]:focus {
+	outline: 3px solid #ebb;
+}
 /********** css for status button material icon *********/
 
 #post_status {
