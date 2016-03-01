@@ -480,6 +480,10 @@ input[type=text]:focus {
 	transform: rotate(90deg);
 }
 
+.rotate-backwards:hover {
+	transform: rotate(-90deg);
+}
+
 .reply_button {
 	flex-direction: column;
 	display: flex;
