@@ -5,7 +5,8 @@
 	<link type="text/css" rel="stylesheet" href="TCA-stylesheet2.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="toggle-post.js"></script>
+	<script type="text/javascript" src="post_a_status.js"></script>
+	<script type="text/javascript" src="reply.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -41,12 +42,12 @@
 		<div id="outerbody">
 				<div id="article">
 					<div id="post_status">
-			                        <i onclick="plus_clicked()" class="material-icons">add</i>
+			                        <i onclick="plus_clicked()" class="material-icons rotate">add</i>
 			                </div>
 					<div id="submit_status_form">
 						<form id="status_form">
 							<input type="text" id="status_form_text" autocomplete="off"></input>
-							<i id="button" onclick="arrow_clicked()" class="material-icons">trending_flat</i>
+							<i id="button" onclick="arrow_clicked()" class="material-icons rotate">trending_flat</i>
 							<div id="disgusting">
 							<input type="checkbox" value="Add location">Add Location</input>
 							<input type="submit" value="Post"></input>
@@ -54,47 +55,50 @@
 						</form>
 					</div>
 					<div class="user">
-						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-						<h4>USER NAME - DATE AND TIME</h4>
-						<p>this is where i tell you about my day</p>
+						<div class="post_and_reply">
+							<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+							<div class="post_content">
+								<h4>USER NAME - DATE AND TIME</h4>
+								<p>this is where i tell you about my day</p>
+							</div>
+						</div>
+						<div class="reply_form">
+							<div class="reply_button" id="reply_button_1" onclick="toggle_reply(1)">
+								<i class="material-icons reply">comment</i>
+							</div>
+		                    <form class="reply_input_area" id="reply_form_1" style="display:none;">
+       			                <input type="text" class="reply_text" autocomplete="off"></input>
+               			        <i onclick="toggle_reply(1)" class="material-icons button">trending_flat</i>
+		            	        <div class="disgusting">
+           				            <input type="checkbox" value="Add location">Add Location</input>
+		                	        <input type="submit" value="Post"></input>
+          			            </div>
+               			   </form>
+               		    </div>
 					</div>
 					<div class="user">
-						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-						<h4>USER NAME - DATE AND TIME</h4>
-						<p>this is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my daythis is where i tell you about my day</p>
-					</div>
-					<div class="user">
-						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-						<h4>USER NAME - DATE AND TIME</h4>
-						<p>this is where i tell you about my day</p>
-					</div>
-					<div class="user">
-						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-						<h4>USER NAME - DATE AND TIME</h4>
-						<p>this is where i tell you about my day</p>
-					</div>
-					<div class="user" id="last-status">
-						<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-						<h4>USER NAME - DATE AND TIME</h4>
-						<p>this is where i tell you about my day</p>
-					</div>
-					<div class="user">
-                                                <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-                                                <h4>USER NAME - DATE AND TIME</h4>
-                                                <p>this is where i tell you about my day</p>
-                                        </div>
-					<div class="user">
-                                                <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-                                                <h4>USER NAME - DATE AND TIME</h4>
-                                                <p>this is where i tell you about my day</p>
-                                        </div>
-					<div class="user">
-                                                <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
-                                                <h4>USER NAME - DATE AND TIME</h4>
-                                                <p>this is where i tell you about my day</p>
-                                        </div>
-
-				</div>
+                        <div class="post_and_reply">
+                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <div class="post_content">
+                                <h4>USER NAME - DATE AND TIME</h4>
+                                <p>this is where i tell you about my day</p>
+                            </div>
+                        </div>
+                        <div class="reply_form">
+                            <div class="reply_button" id="reply_button_2" onclick="toggle_reply(2)">
+                                <i class="material-icons reply">comment</i>
+                            </div>
+                            <form class="reply_input_area" id="reply_form_2" style="display:none;">
+                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <i onclick="toggle_reply(2)" class="material-icons button">trending_flat</i>
+                                <div class="disgusting">
+                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="submit" value="Post"></input>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                </div>
 				<div id="aside">
 					<h3 id="aside_title">BEST USER</h3>
 					<div id="best_user">

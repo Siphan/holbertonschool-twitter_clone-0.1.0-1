@@ -292,21 +292,29 @@ a {
 
 /******* HEADER DONE - START MAIN BODY *********/
 
-
+.hidden {
+	visibility: none;
+}
 
 .user {
 	min-height: 120px;
 	background-color: #ffffff;
 	padding: 15px;
 	border-bottom: 1px solid #A5B3B8;
+	display: flex;
+	flex-direction: column;
 }
 
 .user-photo {
 	height: 110px;
 	width: 120px;
-	float: left;
-	margin: 5px 10px 0 5px;
 	border: 2px solid #292929;
+	align-self: flex-start;
+}
+
+.post_and_reply {
+	display: flex;
+	flex-direction: row;
 }
 
 #last-status {
@@ -427,6 +435,19 @@ h1 {
 	height: 30px;
 }
 
+.reply_input_area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100px;
+}
+
+.reply_text {
+	width: 75%;
+	height: 30px;
+}
+
 input[type=text] {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
@@ -449,6 +470,23 @@ input[type=text]:focus {
         display: flex;
         align-items: center;
         justify-content: space-around;
+}
+
+.button {
+	width: 24px;
+}
+
+.rotate:hover {
+	transform: rotate(90deg);
+}
+
+.reply_button {
+	flex-direction: column;
+	display: flex;
+}
+
+.reply {
+	align-self: center;	
 }
 
 i.material-icons {
@@ -495,7 +533,6 @@ i.material-icons:nth-of-type(1):after {
 i.material-icons:hover {
                 background-color: #fff;
                 color: #cd8484;
-                transform: rotate(90deg);
                 cursor: pointer;
                 box-shadow: none;
 }

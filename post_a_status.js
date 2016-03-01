@@ -1,3 +1,14 @@
+var readyStateCheckInterval = setInterval(function() {
+    if (document.readyState === "complete") {
+        clearInterval(readyStateCheckInterval);
+        init();
+    }
+}, 10);
+
+function init() {
+	hideDisgusting();
+}
+
 function plus_clicked() {
 	document.getElementById('submit_status_form').style.display = "flex";
 	document.getElementById('post_status').style.display = "none";
@@ -22,4 +33,10 @@ function toggle(obj) {
 function hideDisgusting()
 {
 	toggle(document.getElementById("disgusting"));
+
+	var selects = document.getElementsByClassName("disgusting");
+	for(var i =0, il = selects.length;i<il;i++){
+		toggle(selects[i]);
+	}
+
 }
