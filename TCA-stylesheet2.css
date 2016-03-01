@@ -8,6 +8,10 @@ body {
 	background-color: #ffcccc;
 }
 
+#header{
+	width: 100%;
+}
+
 #outerbody {
 	min-height: 700px;
 	margin: 0;
@@ -70,6 +74,10 @@ body {
     min-height: 100%;
     font-family: 'Raleway', sans-serif;
     background-color: #ffcccc;
+}
+
+#header {
+	width: 100%;
 }
 
 #outerbody {
@@ -145,6 +153,10 @@ body {
 	background-color: #ffcccc;
 }
 
+#header {
+	width: 992px;
+}
+
 #outerbody {
 	min-height: 700px;
 	margin: 0;
@@ -209,10 +221,11 @@ body {
 /******** HEADER CSS ********/
 #header {
 	display: flex;
+	position: fixed;
 	height: 75px;
-	width: 100%;
 	background-color: #EB596A;
 	justify-content: space-between;
+	margin-top: -75px;
 }
 
 #right-menus {
@@ -291,6 +304,10 @@ a {
 }
 
 /******* HEADER DONE - START MAIN BODY *********/
+
+#outerbody {
+	margin-top:75px;
+}
 
 .hidden {
 	visibility: none;
