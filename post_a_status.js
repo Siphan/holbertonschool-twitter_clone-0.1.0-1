@@ -9,34 +9,21 @@ function init() {
 	hideDisgusting();
 }
 
-function plus_clicked() {
-	document.getElementById('submit_status_form').style.display = "flex";
-	document.getElementById('post_status').style.display = "none";
+function toggle_status_post() {
+	document.getElementById('submit_status_form').toggle("flex");
+        document.getElementById('post_status').toggle("flex");
 	if (document.getElementById('disgusting').style.display != "none") {
-		hideDisgusting();
-	}
-}
-
-function arrow_clicked() {
-        document.getElementById('submit_status_form').style.display = "none";
-        document.getElementById('post_status').style.display = "";
-}
-
-function toggle(obj) {
-	if (obj.style.display != "none") {
-		obj.style.display="none"
-	} else {
-		obj.style.display="";
-	}
+                hideDisgusting();
+        }
 }
 
 function hideDisgusting()
 {
-	toggle(document.getElementById("disgusting"));
+	document.getElementById("disgusting").toggle("flex");
 
 	var selects = document.getElementsByClassName("disgusting");
 	for(var i =0, il = selects.length;i<il;i++){
-		toggle(selects[i]);
+		selects[i].toggle("display");
 	}
 
 }
