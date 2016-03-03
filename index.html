@@ -5,9 +5,11 @@
 	<link type="text/css" rel="stylesheet" href="TCA-stylesheet2.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="SmoothMovement.js"></script>
 	<script type="text/javascript" src="toggle.js"></script>
 	<script type="text/javascript" src="post_a_status.js"></script>
 	<script type="text/javascript" src="reply.js"></script>
+	<script type="text/javascript" src="sticky_smart_header.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -15,7 +17,7 @@
 	<div id="everything">
 		<div id="behind_header" style: "height: 75px; width: 900px;;"></div>
 <!-- HEADER BEGIN -->
-		<div id="header">
+		<div id="header" style="height: 75px;">
 <!-- LOGO DIV BEGIN-->		
 			<div id="logo">
 				<h1 id="tagline">MEOWER</h1>
@@ -92,6 +94,94 @@
 						   </form>
 						</div>
 					</div>
+					<div class="user">
+                        <div class="post_and_reply">
+                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <div class="post_content">
+                                <h4>USER NAME - DATE AND TIME</h4>
+                                <p>this is where i tell you about my day</p>
+                            </div>
+                        </div>
+                        <div class="reply_form">
+                            <div class="reply_button" id="reply_button_3" onclick="toggle_reply(3)">
+                                <i class="material-icons reply">comment</i>
+                            </div>
+                            <form class="reply_input_area" id="reply_form_3" style="display:none;">
+                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <i onclick="toggle_reply(3)" class="material-icons rotate-backwards button">trending_flat</i>
+                                <div class="disgusting">
+                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="submit" value="Post"></input>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+					<div class="user">
+                        <div class="post_and_reply">
+                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <div class="post_content">
+                                <h4>USER NAME - DATE AND TIME</h4>
+                                <p>this is where i tell you about my day</p>
+                            </div>
+                        </div>
+                        <div class="reply_form">
+                            <div class="reply_button" id="reply_button_4" onclick="toggle_reply(4)">
+                                <i class="material-icons reply">comment</i>
+                            </div>
+                            <form class="reply_input_area" id="reply_form_4" style="display:none;">
+                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <i onclick="toggle_reply(4)" class="material-icons rotate-backwards button">trending_flat</i>
+                                <div class="disgusting">
+                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="submit" value="Post"></input>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+					<div class="user">
+                        <div class="post_and_reply">
+                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <div class="post_content">
+                                <h4>USER NAME - DATE AND TIME</h4>
+                                <p>this is where i tell you about my day</p>
+                            </div>
+                        </div>
+                        <div class="reply_form">
+                            <div class="reply_button" id="reply_button_5" onclick="toggle_reply(5)">
+                                <i class="material-icons reply">comment</i>
+                            </div>
+                            <form class="reply_input_area" id="reply_form_5" style="display:none;">
+                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <i onclick="toggle_reply(5)" class="material-icons rotate-backwards button">trending_flat</i>
+                                <div class="disgusting">
+                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="submit" value="Post"></input>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+					<div class="user">
+                        <div class="post_and_reply">
+                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <div class="post_content">
+                                <h4>USER NAME - DATE AND TIME</h4>
+                                <p>this is where i tell you about my day</p>
+                            </div>
+                        </div>
+                        <div class="reply_form">
+                            <div class="reply_button" id="reply_button_6" onclick="toggle_reply(6)">
+                                <i class="material-icons reply">comment</i>
+                            </div>
+                            <form class="reply_input_area" id="reply_form_6" style="display:none;">
+                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <i onclick="toggle_reply(6)" class="material-icons rotate-backwards button">trending_flat</i>
+                                <div class="disgusting">
+                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="submit" value="Post"></input>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
 				</div>
 				<div id="aside">
 					<h3 id="aside_title">BEST USER</h3>

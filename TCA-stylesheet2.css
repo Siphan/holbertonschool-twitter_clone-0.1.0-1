@@ -221,11 +221,20 @@ body {
 /******** HEADER CSS ********/
 #header {
 	display: flex;
+	z-index: 1;
 	position: fixed;
 	height: 75px;
 	background-color: #EB596A;
 	justify-content: space-between;
 	margin-top: -75px;
+}
+
+.header-visible {
+	
+}
+
+.header-hidden {
+
 }
 
 #right-menus {

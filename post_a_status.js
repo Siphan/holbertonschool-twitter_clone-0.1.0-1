@@ -23,7 +23,7 @@ function hideDisgusting()
 
 	var selects = document.getElementsByClassName("disgusting");
 	for(var i =0, il = selects.length;i<il;i++){
-		selects[i].toggle("display");
+		selects[i].toggle("block");
 	}
 
 }
