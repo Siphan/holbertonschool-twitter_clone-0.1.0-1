@@ -6,22 +6,22 @@ var readyStateCheckInterval = setInterval(function() {
 }, 10);
 
 function init() {
-	hideDisgusting();
+	hideLocation();
 }
 
 function toggle_status_post() {
 	document.getElementById('submit_status_form').toggle("flex");
         document.getElementById('post_status').toggle("flex");
-	if (document.getElementById('disgusting').style.display != "none") {
-                hideDisgusting();
+	if (document.getElementById('location').style.display != "none") {
+                hideLocation();
         }
 }
 
-function hideDisgusting()
+function hideLocation()
 {
-	document.getElementById("disgusting").toggle("flex");
+	document.getElementById("location").toggle("flex");
 
-	var selects = document.getElementsByClassName("disgusting");
+	var selects = document.getElementsByClassName("location");
 	for(var i =0, il = selects.length;i<il;i++){
 		selects[i].toggle("block");
 	}
