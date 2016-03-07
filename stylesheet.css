@@ -1,0 +1,519 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+/************************** Make it responsive *************************************************/
+/****************************** Phone-sized screen ********************************************/
+@media (max-width: 767px) {
+body {
+	margin: auto;
+	min-height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background-color: #FADCE8;
+}
+
+#header{
+	width: 100%;
+}
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#article {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+#aside {
+	width: 100%;
+	color: #000000;
+	background-color: #FAFAFA;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#welcome-box {
+	width: 100%;
+	text-align: center;
+    background-color: #222222;
+    vertical-align: middle;
+}
+
+#welcome-box > p {
+	color: #FAFAFA;
+	padding: 20px;
+}
+
+/*************************************** responsive user page *******************************/
+#profile_aside {
+	width: 100%;
+	background-color: #2D3047;
+	text-align: center;
+	padding: 10px;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+}
+
+/***************************** tablet-sized screen ********************************************/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+body {
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FADCE8;
+}
+
+#header {
+	width: 100%;
+}
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#tablet-width-align {
+	display: flex;
+	flex-direction: row;
+}
+
+#aside {
+    width: 67%;
+    background-color: #FAFAFA;
+    color: #000000;
+    margin-right: 10px;
+}
+
+
+#welcome-box {
+	width: 33%;
+	left: 67%;	
+	text-align: center;
+	background-color: #222222;
+}
+
+#welcome-box > p {
+	color: #ffffff;
+	padding: 30px;
+}
+
+/********************************* responsive user page ***************************************/
+#profile_aside {
+	width: 67%;
+	height: 390px;
+	background-color: #2D3047;
+	margin-bottom: -390px;
+	text-align: center;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+}
+
+/*************************** anything wider than a tablet screen size *************************/
+@media (min-width: 992px) {
+body {
+	margin: auto;
+	padding: 0;
+	width: 992px;
+	min-height: 100%;
+	font-family: 'Raleway', sans-serif;
+	background-color: #FADCE8;
+}
+
+#header {
+	width: 992px;
+}
+
+#outerbody {
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+#article {
+	width: 725px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+}
+
+#aside {
+	width: 280px;
+	color: #000000;
+	display: flex;
+	vertical-align: top;
+	flex-direction: column;
+}
+
+#welcome-box {
+	position: fixed;
+	right: 0;
+	top: 95%;
+	padding: 7px;
+	background-color: #222222;
+	color: #ffffff;
+}
+
+#welcome-box > p {
+	color: #ffffff;
+}
+
+/**************************** responsive user page *********************************************/
+#profile_aside {
+	width: 257px;
+	min-height: 100vh;
+	background-color: #2D3047;
+	text-align: center;
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+
+#profile_statuses {
+	width: 735px;
+	min-height: 100vh;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+}
+}
+
+/************************ Universal CSS begins ***********************************************/
+/******************************** Header from left to right *********************************/
+#header {
+	display: flex;
+	z-index: 1;
+	position: fixed;
+	height: 75px;
+	background-color: #FF5E9F;
+	justify-content: space-between;
+	margin-top: -75px;
+}
+
+.header-visible {
+	
+}
+
+.header-hidden {
+
+}
+
+#logo {
+	margin: 15px;
+	display: flex;
+	width: 40%;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+#kitten {
+	height: 45px;
+	margin-bottom: -3px;
+}
+
+#tagline {	
+	margin: 0;
+	font-family: 'Architects Daughter', cursive;
+	margin-bottom: -13px;
+}
+
+#menu {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+
+#menu-button {
+	display: flex;
+	
+}
+
+.button-text {
+	width: 110px;
+	height: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #FF5E9F;
+}
+
+.button-text:hover {
+	border-bottom: 5px solid black;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/******************************* Header done - Body begins ***********************************/
+
+#outerbody {
+	margin-top:75px;
+}
+
+.hidden {
+	visibility: none;
+}
+
+.user {
+	min-height: 120px;
+	background-color: #FAFAFA;
+	padding: 15px;
+	border-top: 1px solid #A5B3B8;
+	display: flex;
+	flex-direction: column;
+}
+
+.post_and_reply {
+	display: flex;
+	flex-direction: row;
+}
+
+.user-photo {
+	height: 100px;
+	width: 110px;
+	align-self: flex-start;
+	margin: 5px 10px 0 5px;
+}
+
+.user-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #FF5E9F;
+}
+
+/************************************** Article done - Aside begins *************************/
+
+#aside_title {
+	text-align: center;
+	background-color: #FAFAFA;
+}
+
+.featured-user {
+	background-color: #FAFAFA;
+	display: flex;
+	flex-direction: column;
+	padding-top: 7px;
+}
+
+.feat-user-photo-wrapper {
+	align-self: center;
+}
+
+.feat-user-photo {
+	height: 140px;
+	width: 150px;
+}
+
+.feat-user-bio {
+	padding: 8px;
+	text-align: center;
+}
+
+/******************************************** CSS for user page *****************************/
+
+#profile_aside > p {
+	color: #fafafa;
+}
+
+#profile_photo_wrapper {
+	text-align: center;
+}
+
+#profile_photo {
+	height: 100px;
+	width: 110px;
+	border: 2px solid #fafafa;
+}
+
+
+/********************************* css for all users *****************************************/
+
+#user_list {
+	min-height: 700px;
+	width: 100%;
+}
+
+.user_summary {
+	min-height: 120px;
+    background-color: #ffffff;
+    padding: 15px;
+   	border-bottom: 1px solid #A5B3B8;
+}
+
+.user_summary_image {
+	height: 110px;
+	float: left;
+	border: 2px solid #292929;
+	margin-right: 5px;
+}
+
+.username_link {
+	color: #222222;	
+}
+
+/***************************** post status css ***********************************************/
+
+#submit_status_form {
+	display: none;
+	width: 100%;
+	height: 150px;
+	background: #fff;
+}
+
+#status_form {
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#status_form_text {
+	width: 75%;
+	height: 30px;
+}
+
+.reply_input_area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100px;
+}
+
+.reply_text {
+	width: 75%;
+	height: 30px;
+}
+
+input[type=text] {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: #222;
+	font-size: 14px;
+	padding-left: 10px;
+	border: none;
+	background-color: #FADCE8;
+}
+
+input[type=text]:focus {
+	outline: 3px solid #ebb;
+}
+/********** css for status button material icon *********/
+
+#post_status {
+	width: 100%;
+	height: 70px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button {
+	width: 24px;
+}
+
+.rotate:hover {
+	transform: rotate(90deg);
+}
+
+.rotate-backwards:hover {
+	transform: rotate(-90deg);
+}
+
+.reply_button {
+	flex-direction: column;
+	display: flex;
+}
+
+.reply {
+	align-self: center;	
+}
+
+i.material-icons {
+	font-size: 1.5rem;
+	font-family: "Material Icons";
+	background-color: #FF5E9F;
+	color: white;
+	position: relative;
+	border-radius: 50%;
+	padding: 5px;
+	margin: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+	user-select: none;
+}
+
+i.material-icons:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	border: solid 2px;
+	transform: scale(0.8);
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	border-color: #FF5E9F;
+}
+
+i.material-icons:hover:after {
+	transform: scale(1);
+	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+i.material-icons:nth-of-type(1):after {
+	border-color: #FF5E9F;
+}
+
+i.material-icons:hover {
+	background-color: #fff;
+	color: #FF5E9F;
+	cursor: pointer;
+	box-shadow: none;
+}
+

@@ -1,4 +1,4 @@
 function init() {
-	hideDisgusting();
+	hideLocation();
 	test_geolocation_support();
 }

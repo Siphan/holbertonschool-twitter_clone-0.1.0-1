@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Twitter Clone Adventure - Block 2</title>
-	<link type="text/css" rel="stylesheet" href="TCA-stylesheet2.css"/>
+	<title>Meower</title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="SmoothMovement.js"></script>
@@ -19,47 +19,45 @@
 </head>
 <body id="body">
 	<div id="everything">
-		<div id="behind_header" style: "height: 75px; width: 900px;;"></div>
-<!-- HEADER BEGIN -->
+<!-- //////////////////////////////////////////// Header beings ///////////////////////////// -->
+		<div id="behind_header" style: "height: 75px; width: 900px;"></div>
 		<div id="header" style="height: 75px;">
-<!-- LOGO DIV BEGIN-->		
 			<div id="logo">
+				<img id="kitten" src="https://cloud.githubusercontent.com/assets/17101174/12869210/6da8f1c6-cccd-11e5-89fc-3f1ac0d75ca0.png" alt="meow"/>
 				<h1 id="tagline">MEOWER</h1>
 			</div>
-<!-- LOGO DIV END -->
-			<div id="right-menus">
-<!-- MENU BUTTON BEGIN-->	
-				<div id="menu">
-					<div class="menubuttontext"><a href="/index.html">Home</a></div>
-					<div class="menubuttontext"><a href="/TCA-Block2-UserPage.html">My Statuses</a></div>
-					<div class="menubuttontext"><a href="/TCA-Block2-AllUsers.html">All Users</a></div>
+			<div id="menu">
+				<div id="menu-button">
+					<div class="button-text"><a href="/index.html">Home</a></div>
+					<div class="button-text"><a href="/TCA-Block2-UserPage.html">My Statuses</a></div>
+					<div class="button-text"><a href="/TCA-Block2-AllUsers.html">All Users</a></div>
 				</div>
-<!-- MENU BUTTON END -->
 			</div>
 		</div>
-<!-- HEADER ENDS -->
-<!-- MAIN BODY BEGIN -->
+<!-- ///////////////////////////////- Header ends / Main body begins ///////////////////////- -->
 		<div id="outerbody">
+<!-- /////////////////////////////- Article begins ////////////////////////////////////// -->
 				<div id="article">
 					<div id="post_status">
-									<i onclick="toggle_status_post()" class="material-icons rotate">add</i>
-							</div>
+						<i onclick="toggle_status_post()" class="material-icons rotate">add</i>
+					</div>
 					<div id="submit_status_form" style="display: none;">
 						<form id="status_form">
 							<input type="text" id="status_form_text" autocomplete="off"></input>
 							<i id="button" onclick="post_status()" class="material-icons rotate">trending_flat</i>
-							<div id="disgusting">
+							<div id="location">
 							<input type="checkbox" class="geobox" id="geobox">Add Location</input>
 							<input type="submit" value="Post"></input>
 							</div>
 						</form>
 					</div>
+<!-- //////////////////////////////// Post button ends / User posts begin /////////////////// -->
 					<div class="user">
 						<div class="post_and_reply">
-							<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+							<img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
 							<div class="post_content">
-								<h4>USER NAME - DATE AND TIME</h4>
-								<p>this is where i tell you about my day</p>
+								<h4><span class="user-name">Kitty</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 							</div>
 						</div>
 						<div class="reply_form">
@@ -67,9 +65,9 @@
 								<i class="material-icons reply">comment</i>
 							</div>
 							<form class="reply_input_area" id="reply_form_1" style="display:none;">
-	   							<input type="text" class="reply_text" autocomplete="off"></input>
+	   							<input type="text" class="reply_text" autocomplete="off">
 			   					<i onclick="toggle_reply(1)" class="material-icons rotate-backwards button">trending_flat</i>
-								<div class="disgusting">
+								<div class="location">
 		   							<input type="checkbox" class="geobox" value="Add location">Add Location</input>
 									<input type="submit" value="Post"></input>
 		  						</div>
@@ -78,10 +76,10 @@
 					</div>
 					<div class="user">
 						<div class="post_and_reply">
-							<img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+							<img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
 							<div class="post_content">
-								<h4>USER NAME - DATE AND TIME</h4>
-								<p>this is where i tell you about my day</p>
+								<h4><span class="user-name">Catty</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 							</div>
 						</div>
 						<div class="reply_form">
@@ -89,9 +87,9 @@
 								<i class="material-icons reply">comment</i>
 							</div>
 							<form class="reply_input_area" id="reply_form_2" style="display:none;">
-								<input type="text" class="reply_text" autocomplete="off"></input>
+								<input type="text" class="reply_text" autocomplete="off">
 								<i onclick="toggle_reply(2)" class="material-icons rotate-backwards button">trending_flat</i>
-								<div class="disgusting">
+								<div class="location">
 									<input type="checkbox" class="geobox" value="Add location">Add Location</input>
 									<input type="submit" value="Post"></input>
 								</div>
@@ -100,10 +98,10 @@
 					</div>
 					<div class="user">
                         <div class="post_and_reply">
-                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
                             <div class="post_content">
-                                <h4>USER NAME - DATE AND TIME</h4>
-                                <p>this is where i tell you about my day</p>
+                                <h4><span class="user-name">Liono</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
                             </div>
                         </div>
                         <div class="reply_form">
@@ -111,9 +109,9 @@
                                 <i class="material-icons reply">comment</i>
                             </div>
                             <form class="reply_input_area" id="reply_form_3" style="display:none;">
-                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <input type="text" class="reply_text" autocomplete="off">
                                 <i onclick="toggle_reply(3)" class="material-icons rotate-backwards button">trending_flat</i>
-                                <div class="disgusting">
+                                <div class="location">
                                     <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
@@ -122,10 +120,10 @@
                     </div>
 					<div class="user">
                         <div class="post_and_reply">
-                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
                             <div class="post_content">
-                                <h4>USER NAME - DATE AND TIME</h4>
-                                <p>this is where i tell you about my day</p>
+                                <h4><span class="user-name">Cheetara</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
                         <div class="reply_form">
@@ -133,9 +131,9 @@
                                 <i class="material-icons reply">comment</i>
                             </div>
                             <form class="reply_input_area" id="reply_form_4" style="display:none;">
-                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <input type="text" class="reply_text" autocomplete="off">
                                 <i onclick="toggle_reply(4)" class="material-icons rotate-backwards button">trending_flat</i>
-                                <div class="disgusting">
+                                <div class="location">
                                     <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
@@ -144,10 +142,10 @@
                     </div>
 					<div class="user">
                         <div class="post_and_reply">
-                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
                             <div class="post_content">
-                                <h4>USER NAME - DATE AND TIME</h4>
-                                <p>this is where i tell you about my day</p>
+                                <h4><span class="user-name">Panthro</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
                         <div class="reply_form">
@@ -155,9 +153,9 @@
                                 <i class="material-icons reply">comment</i>
                             </div>
                             <form class="reply_input_area" id="reply_form_5" style="display:none;">
-                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <input type="text" class="reply_text" autocomplete="off">
                                 <i onclick="toggle_reply(5)" class="material-icons rotate-backwards button">trending_flat</i>
-                                <div class="disgusting">
+                                <div class="location">
                                     <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
@@ -166,10 +164,10 @@
                     </div>
 					<div class="user">
                         <div class="post_and_reply">
-                            <img class="user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+                            <img class="user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
                             <div class="post_content">
-                                <h4>USER NAME - DATE AND TIME</h4>
-                                <p>this is where i tell you about my day</p>
+                                <h4><span class="user-name">Snarf</span> 01-01-16 at 12:34</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                             </div>
                         </div>
                         <div class="reply_form">
@@ -177,9 +175,9 @@
                                 <i class="material-icons reply">comment</i>
                             </div>
                             <form class="reply_input_area" id="reply_form_6" style="display:none;">
-                                <input type="text" class="reply_text" autocomplete="off"></input>
+                                <input type="text" class="reply_text" autocomplete="off">
                                 <i onclick="toggle_reply(6)" class="material-icons rotate-backwards button">trending_flat</i>
-                                <div class="disgusting">
+                                <div class="location">
                                     <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
@@ -187,29 +185,35 @@
                         </div>
                     </div>
 				</div>
+<!-- /////////////////////////// Article ends / Aside begins ///////////////////////////// -->
+			<div id="tablet-width-align">
 				<div id="aside">
-					<h3 id="aside_title">BEST USER</h3>
-					<div id="best_user">
-						<div class="best_user_photo_wrapper">
-							<img class="best-user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+					<div id="aside_title">
+						<h3>FEATURED USERS</h3>
+					</div>
+					<div class="featured-user">
+						<div class="feat-user-photo-wrapper">
+							<img class="feat-user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user meow">
 						</div>
-						<div class="best_user_bio">
-							Kitty is the best user. You are inferior to kitty.
+						<div class="feat-user-bio">
+							<p><span class="user-name">Kitty</span> is cool and stuff</p>
 						</div>
 					</div>
-					<h3 id="aside_title.">2ND BEST USER</h3>
-					<div id="best_useri.">
-						<div class="best_user_photo_wrapper">
-							<img class="best-user-photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.raiseakitten.com%2Fwp-content%2Fuploads%2F2012%2F03%2Fkitten.jpg&f=1" alt="user meow">
+					<div class="featured-user">
+						<div class="feat-user-photo-wrapper">
+							<img class="feat-user-photo" src="https://cloud.githubusercontent.com/assets/17101174/13474568/7595e2fe-e073-11e5-932b-78ba3c17eabd.png" alt="user pic">
 						</div>
-						<div class="best_user_bio">
-							Catty is the 2nd best user. She is also inferior to kitty.
+						<div class="feat-user-bio">
+							<p><span class="user-name">Catty</span> is also cool and stuff</p>
 						</div>
 					</div>
 				</div>
-		</div>
-		<div onclick="hideDisgusting()" id="welcome-box"><p onclick="all_images()">show all images<p></div>
-<!-- MAIN BODY ENDS -->
-	</div>
+<!-- //////////////////////////////// Aside ends //////////////////////////////////////////// -->	
+				<div onclick="hideLocation()" id="welcome-box">
+					<p onclick="all_images()">show all images</p>
+				</div>
+			</div> <!-- Closes div 'tablet-width-align' -->
+		</div> <!-- Closes div 'outerbody' -->
+	</div> <!--	Closes div 'everything' -->
 </body>
 </html>
