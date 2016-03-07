@@ -5,8 +5,14 @@ var readyStateCheckInterval = setInterval(function() {
     }
 }, 10);
 
-function init() {
-	hideDisgusting();
+function post_status() {
+	var geobox = document.getElementById("geobox");
+	if (geobox.checked) {
+		location_post();
+	} else {
+		alert("Your status was posted");
+		toggle_status_post();
+	}
 }
 
 function toggle_status_post() {

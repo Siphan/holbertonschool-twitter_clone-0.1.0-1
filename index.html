@@ -6,11 +6,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="SmoothMovement.js"></script>
+	<script type="text/javascript" src="init.js"></script>
+	<script type="text/javascript" src="geolocation_progressive_enhancement.js"></script>
 	<script type="text/javascript" src="toggle.js"></script>
 	<script type="text/javascript" src="post_a_status.js"></script>
 	<script type="text/javascript" src="reply.js"></script>
 	<script type="text/javascript" src="sticky_smart_header.js"></script>
 	<script type="text/javascript" src="all_images_data.js"></script>
+	<script type="text/javascript" src="geolocation.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -44,9 +47,9 @@
 					<div id="submit_status_form" style="display: none;">
 						<form id="status_form">
 							<input type="text" id="status_form_text" autocomplete="off"></input>
-							<i id="button" onclick="toggle_status_post()" class="material-icons rotate">trending_flat</i>
+							<i id="button" onclick="post_status()" class="material-icons rotate">trending_flat</i>
 							<div id="disgusting">
-							<input type="checkbox" value="Add location">Add Location</input>
+							<input type="checkbox" class="geobox" id="geobox">Add Location</input>
 							<input type="submit" value="Post"></input>
 							</div>
 						</form>
@@ -67,7 +70,7 @@
 	   							<input type="text" class="reply_text" autocomplete="off"></input>
 			   					<i onclick="toggle_reply(1)" class="material-icons rotate-backwards button">trending_flat</i>
 								<div class="disgusting">
-		   							<input type="checkbox" value="Add location">Add Location</input>
+		   							<input type="checkbox" class="geobox" value="Add location">Add Location</input>
 									<input type="submit" value="Post"></input>
 		  						</div>
 			   			   </form>
@@ -89,7 +92,7 @@
 								<input type="text" class="reply_text" autocomplete="off"></input>
 								<i onclick="toggle_reply(2)" class="material-icons rotate-backwards button">trending_flat</i>
 								<div class="disgusting">
-									<input type="checkbox" value="Add location">Add Location</input>
+									<input type="checkbox" class="geobox" value="Add location">Add Location</input>
 									<input type="submit" value="Post"></input>
 								</div>
 						   </form>
@@ -111,7 +114,7 @@
                                 <input type="text" class="reply_text" autocomplete="off"></input>
                                 <i onclick="toggle_reply(3)" class="material-icons rotate-backwards button">trending_flat</i>
                                 <div class="disgusting">
-                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
                            </form>
@@ -133,7 +136,7 @@
                                 <input type="text" class="reply_text" autocomplete="off"></input>
                                 <i onclick="toggle_reply(4)" class="material-icons rotate-backwards button">trending_flat</i>
                                 <div class="disgusting">
-                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
                            </form>
@@ -155,7 +158,7 @@
                                 <input type="text" class="reply_text" autocomplete="off"></input>
                                 <i onclick="toggle_reply(5)" class="material-icons rotate-backwards button">trending_flat</i>
                                 <div class="disgusting">
-                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
                            </form>
@@ -177,7 +180,7 @@
                                 <input type="text" class="reply_text" autocomplete="off"></input>
                                 <i onclick="toggle_reply(6)" class="material-icons rotate-backwards button">trending_flat</i>
                                 <div class="disgusting">
-                                    <input type="checkbox" value="Add location">Add Location</input>
+                                    <input type="checkbox" class="geobox" value="Add location">Add Location</input>
                                     <input type="submit" value="Post"></input>
                                 </div>
                            </form>
