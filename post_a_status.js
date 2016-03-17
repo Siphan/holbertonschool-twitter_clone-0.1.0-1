@@ -13,23 +13,22 @@ function post_status() {
 	} else {
 		alert("Your status was posted");
 		toggle_status_post();
-	}
+  }
+}
 
 function toggle_status_post() {
 	document.getElementById('submit_status_form').toggle("flex");
-        document.getElementById('post_status').toggle("flex");
+    document.getElementById('post_status').toggle("flex");
 	if (document.getElementById('location').style.display != "none") {
-                hideLocation();
-        }
+    hideLocation();
+  }
 }
 
-function hideLocation()
-{
+function hideLocation() {
 	document.getElementById("location").toggle("flex");
 
 	var selects = document.getElementsByClassName("location");
 	for(var i =0, il = selects.length;i<il;i++){
 		selects[i].toggle("block");
 	}
-
 }
