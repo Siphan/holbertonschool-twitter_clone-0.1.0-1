@@ -6,6 +6,7 @@ function moreStatuses() {
     if (httpRequest.readyState == 4 && httpRequest.status == 200) {
       document.getElementById("statuses").innerHTML = document.getElementById("statuses").innerHTML + httpRequest.responseText;
       init_replies();
+      hideLocation();
     } else if (httpRequest.readyState == 4 && httpRequest.status == 404) {
       no_more_statuses();
     }
