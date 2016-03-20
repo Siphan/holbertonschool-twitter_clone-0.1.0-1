@@ -111,7 +111,7 @@ body {
 
 #welcome-box {
 	width: 33%;
-	left: 67%;	
+	left: 67%;
 	text-align: center;
 	background-color: #222222;
 }
@@ -225,7 +225,7 @@ body {
 }
 
 .header-visible {
-	
+
 }
 
 .header-hidden {
@@ -245,7 +245,7 @@ body {
 	margin-bottom: -3px;
 }
 
-#tagline {	
+#tagline {
 	margin: 0;
 	font-family: 'Architects Daughter', cursive;
 	margin-bottom: -13px;
@@ -259,7 +259,7 @@ body {
 
 #menu-button {
 	display: flex;
-	
+
 }
 
 .button-text {
@@ -385,7 +385,7 @@ a {
 }
 
 .username_link {
-	color: #222222;	
+	color: #222222;
 }
 
 /***************************** post status css ***********************************************/
@@ -466,7 +466,7 @@ input[type=text]:focus {
 }
 
 .reply {
-	align-self: center;	
+	align-self: center;
 }
 
 i.material-icons {
@@ -517,3 +517,9 @@ i.material-icons:hover {
 	box-shadow: none;
 }
 
+.load_more_statuses {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #fff;
+}

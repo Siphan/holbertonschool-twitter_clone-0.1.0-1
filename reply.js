@@ -10,7 +10,6 @@ function init_replies() {
 
 function get_listener(i) {
 	return function () {
-		console.log(i);
 		document.getElementById("reply_button_" + (i+1)).toggle("flex");
 		document.getElementById("reply_form_" + (i+1)).toggle("flex");
 	}
