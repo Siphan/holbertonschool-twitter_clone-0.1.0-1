@@ -1,7 +1,7 @@
 var counter = 0;
 
 function moreStatuses() {
-  var httpRequest = new XMLHttpRequest()
+  /*var httpRequest = new XMLHttpRequest()
   httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState == 4 && httpRequest.status == 200) {
       document.getElementById("statuses").innerHTML = document.getElementById("statuses").innerHTML + httpRequest.responseText;
@@ -11,8 +11,14 @@ function moreStatuses() {
       no_more_statuses();
     }
   }
-  httpRequest.open('GET', "statuses-" + counter + ".html");
-  httpRequest.send();
+  httpRequest.open('GET', "statuses-" + counter + ".html");*/
+
+  ajaxGet("statuses-" + counter + ".html", function(resp) {
+    document.getElementById("statuses").innerHTML = document.getElementById("statuses").innerHTML + resp;
+    init_replies();
+    hideLocation();
+  });
+
   counter++;
 }
 
