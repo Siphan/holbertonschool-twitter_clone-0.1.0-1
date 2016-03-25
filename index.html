@@ -3,6 +3,7 @@
 
 <head>
 	<title>Meower</title>
+	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="stylesheet.css" />
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
@@ -17,14 +18,13 @@
 	<script type="text/javascript" src="js/geolocation.js"></script>
 	<script type="text/javascript" src="js/load_more.js"></script>
 	<script type="text/javascript" src="js/ajax.js"></script>
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body id="body">
 	<div id="everything">
 		<!-- //////////////////////////////////////////// Header beings ///////////////////////////// -->
-		<div id="behind_header" style: "height: 75px; width: 900px;"></div>
+		<div id="behind_header"></div>
 		<div id="header" style="height: 75px;">
 			<div id="logo">
 				<img id="kitten" src="https://cloud.githubusercontent.com/assets/17101174/12869210/6da8f1c6-cccd-11e5-89fc-3f1ac0d75ca0.png" alt="meow" />
@@ -47,11 +47,11 @@
 				</div>
 				<div id="submit_status_form" style="display: none;">
 					<form id="status_form">
-						<input type="text" id="status_form_text" autocomplete="off"></input>
+						<input type="text" id="status_form_text" autocomplete="off">
 						<i id="button" onclick="post_status()" class="material-icons rotate">trending_flat</i>
 						<div id="location">
-							<input type="checkbox" class="geobox" id="geobox">Add Location</input>
-							<input type="submit" value="Post"></input>
+							<input type="checkbox" class="geobox" id="geobox">Add Location
+							<input type="submit" value="Post">
 						</div>
 					</form>
 				</div>
