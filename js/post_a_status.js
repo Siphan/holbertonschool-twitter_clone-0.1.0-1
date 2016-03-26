@@ -26,9 +26,4 @@ function toggle_status_post() {
 
 function hideLocation() {
 	document.getElementById("location").toggle("flex");
-
-	var selects = document.getElementsByClassName("location");
-	for(var i =0, il = selects.length;i<il;i++){
-		selects[i].toggle("block");
-	}
 }
