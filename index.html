@@ -43,14 +43,16 @@
 			<!-- /////////////////////////////- Article begins ////////////////////////////////////// -->
 			<div id="article">
 				<div id="post_status">
-					<i onclick="toggle_status_post()" class="material-icons rotate">add</i>
+					<i id="post-status-click" onclick="toggle_status_post()" class="material-icons rotate">add</i>
 				</div>
 				<div id="submit_status_form" style="display: none;">
 					<form id="status_form">
+						<label for="status_form_text">Post your meow</label>
 						<input type="text" id="status_form_text" autocomplete="off">
 						<i id="button" onclick="post_status()" class="material-icons rotate">trending_flat</i>
 						<div id="location">
-							<input type="checkbox" class="geobox" id="geobox">Add Location
+							<label for="geobox">Add Location</label>
+							<input type="checkbox" class="geobox" id="geobox">
 							<input type="submit" value="Post">
 						</div>
 					</form>
@@ -99,7 +101,10 @@
 				<div class="middot">&middot;</div>
 				<div class="footer-text-padding"><a href="#">All Users</a></div>
 			</div>
-			<img id="pink-cat" src="https://cloud.githubusercontent.com/assets/15206187/14062382/1d2b9524-f35a-11e5-94d6-1fd77101fb62.png" alt="pink meower logo">
+			<div id="footer-center">
+				<img id="pink-cat" src="https://cloud.githubusercontent.com/assets/15206187/14062382/1d2b9524-f35a-11e5-94d6-1fd77101fb62.png" alt="pink meower logo">
+				<p id="creators">Created by John Serrano &amp; Dora Korpar</p>
+			</div>
 			<div id="right-of-cat">
 				<div class="footer-text-padding"><a href="#">About</a></div>
 				<div class="middot">&middot;</div>

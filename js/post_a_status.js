@@ -5,6 +5,7 @@ var readyStateCheckInterval = setInterval(function() {
     }
 }, 10);
 
+// document.getElementById("post-status-click").addEventListener("click", toggle_status_post);
 
 function post_status() {
 	var geobox = document.getElementById("geobox");
