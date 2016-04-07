@@ -45,7 +45,7 @@ include "views/header.php"; ?>
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Log in</button>
+            <button type="submit" class="btn btn-warning">Log in</button>
           </div>
         </div>
       </form>

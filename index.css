@@ -8,6 +8,12 @@ body {
   background-color: #ffcc77;
 }
 
+.alert-danger {
+  color: #a90000 !important;
+  background-color: #f95 !important;
+  border: none;
+}
+
 .load_more_statuses {
   padding-bottom: 20px;
 }

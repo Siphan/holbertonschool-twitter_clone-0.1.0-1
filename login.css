@@ -1,7 +1,9 @@
-.login {
-  background-color: #999999;
+.jumbotron {
+  background-color: #eebb55;
+  border: 1px solid #cc9933;
 }
 
-* {
-border-radius: 0 !important;
+.form-control {
+  background-color: #ffcc77;
+  border: 1px solid #cc9933;
 }

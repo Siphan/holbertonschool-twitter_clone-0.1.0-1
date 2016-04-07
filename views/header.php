@@ -14,9 +14,15 @@
         <li><a href="allusers.php">All Users</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-				<li>
-					<button class="btn btn-warning navbutton" data-toggle="modal" data-target="#postModal">Post</button>
-				</li>
+        <?php
+        if ($post_button == true) {
+          ?>
+  				<li>
+  					<button class="btn btn-warning navbutton" data-toggle="modal" data-target="#postModal">Post</button>
+  				</li>
+          <?php
+        }
+        ?>
         <li><a href="#"><?php
 					if( $_SESSION["user"] != false ) {
 						$name = $_SESSION["user"]['full_name'];

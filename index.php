@@ -51,7 +51,10 @@ if ($_SESSION["logged_in"] == false) {
 
 ?>
 
-<?php include "views/header.php"; ?>
+<?php
+$post_button = true;
+include "views/header.php";
+?>
 
 <?php
 if ($failed) {
