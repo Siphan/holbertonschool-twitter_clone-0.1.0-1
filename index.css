@@ -1,0 +1,56 @@
+* {
+border-radius: 0 !important;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background-color: #ffcc77;
+}
+
+.load_more_statuses {
+  padding-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin: 0 auto !important;
+}
+
+.nav-up {
+  top: -52px;
+}
+
+.navbar {
+  transition: top 0.2s ease-in-out !important;
+}
+
+.navbutton {
+  margin-top: 8px;
+}
+
+.status {
+  display: flex;
+  align-content: flex-end;
+}
+
+.status_picture {
+  margin-right: 20px;
+  width: 67px;
+}
+
+.no-resize {
+  resize: none;
+}
+
+.align-right {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.well {
+  background-color: #eebb55;
+  border-color: #cc9933;
+}
