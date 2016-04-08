@@ -69,6 +69,9 @@ if ($failed) {
 <body>
 	<div class="container">
 		<div class="row">
+			<?php
+			include "views/aside.php";
+			?>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<div id="statuses">
 				</div>
@@ -76,9 +79,6 @@ if ($failed) {
 					<button class="btn btn-warning center" id="statusbutton">More Statuses</button>
 				</div>
 			</div>
-			<?php
-			include "views/aside.php";
-			?>
 		</div>
 	</div>
 </body>
