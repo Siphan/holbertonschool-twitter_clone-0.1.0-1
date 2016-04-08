@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
 	<title>NotTwitter</title>
@@ -34,7 +34,7 @@
               <div class="well">
                 <div class="status">
                   <div>
-                    <img class="status_picture" src="<?php echo $user["image"]; ?>">
+                    <img class="status_picture" src="<?php echo $user["image"]; ?>" alt="user profile photo">
                   </div>
                   <div>
                     <p><strong><?php echo $user["full_name"]; ?></strong> <?php echo $user["login"]; ?></p>
@@ -50,29 +50,5 @@
 		</div>
 	</div>
 </body>
-
-<div id="postModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Post a status</h4>
-      </div>
-      <div class="modal-body">
-				<form role="form">
-					<div class="form-group">
-            <label class="control-label" for="status_text"></label>
-            <div>
-                <textarea rows="3" class="form-control no-resize" id="statuse_text" placeholder="New status..."></textarea>
-            </div>
-        	</div>
-					<div class="align-right">
-						<button type="submit" class="btn btn-warning">Submit</button>
-					</div>
-				</form>
-      </div>
-    </div>
-  </div>
-</div>
 
 </html>

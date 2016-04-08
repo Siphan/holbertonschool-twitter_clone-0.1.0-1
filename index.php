@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
 	<title>NotTwitter</title>
@@ -95,7 +95,7 @@ if ($failed) {
 					<div class="form-group">
             <label class="control-label" for="status_text"></label>
             <div>
-                <textarea rows="3" class="form-control no-resize" id="statuse_text" placeholder="New status..."></textarea>
+                <textarea title="Post a status" rows="3" class="form-control no-resize" id="statuse_text" placeholder="New status..."></textarea>
             </div>
         	</div>
 					<div class="align-right">

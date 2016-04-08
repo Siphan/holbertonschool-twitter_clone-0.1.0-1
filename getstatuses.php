@@ -32,7 +32,7 @@ for ( ; $start < $end ; $start++) {
     <div class="well">
       <div class="status">
         <div >
-          <img class="status_picture" src="<?php echo $user["image"]; ?>">
+          <img class="status_picture" src="<?php echo $user["image"]; ?>" alt="User profile picture">
         </div>
         <div>
           <p><strong><?php echo $user["full_name"]; ?></strong></p>
