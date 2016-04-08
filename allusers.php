@@ -26,6 +26,7 @@
 <body>
 		<div class="container">
 			<div class="row">
+				<?php include "views/aside.php"; ?>
 				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 					<div id="users"> <?php
             foreach ($users as &$user) {
@@ -46,7 +47,6 @@
           ?>
 					</div>
 				</div>
-			<?php include "views/aside.php"; ?>
 		</div>
 	</div>
 </body>

@@ -52,7 +52,9 @@ if ($_SESSION["logged_in"] == false) {
 ?>
 
 <?php
-$post_button = true;
+if ($_SESSION["logged_in"]) {
+	$post_button = true;
+}
 include "views/header.php";
 ?>
 

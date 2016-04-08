@@ -7,6 +7,18 @@ HTMLElement.prototype.toggle = function toggle(display_type) {
 	}
 }
 
+var asideInterval = setInterval(function() {
+    if (document.readyState === "complete") {
+        clearInterval(asideInterval);
+				var mq = window.matchMedia( "(min-width: 992px)" );
+				if (!mq.matches) {
+					document.getElementById("aside-inner").className = "collapse";
+				}
+    }
+}, 10);
+
+
+
 // Hide Header on on scroll down
 // http://jsfiddle.net/mariusc23/s6mLJ/31/
 var didScroll;

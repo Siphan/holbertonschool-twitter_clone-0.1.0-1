@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 aside">
-  <div data-toggle="collapse" data-target="#aside-inner" class="well">
-    <h4>Notifications</h4>
+  <div data-toggle="collapse" data-target="#aside-inner" class="well" id="notification-bar">
+    <h4>Notifications <span class="badge">1</span></h4>
   </div>
   <div id="aside-inner" class="collapse in">
     <?php
