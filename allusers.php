@@ -21,9 +21,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<?php include "views/header.php"; ?>
 
 <body>
+
+	<?php include "views/header.php"; ?>
+
 		<div class="container">
 			<div class="row">
 				<?php include "views/aside.php"; ?>
