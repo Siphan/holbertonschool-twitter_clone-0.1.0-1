@@ -6,7 +6,7 @@
 <html lang="en-US">
 
 <head>
-	<title>NotTwitter</title>
+	<title>Siphan</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="index.css">
@@ -21,7 +21,6 @@
 </head>
 
 <?php
-
 
 function userExists($login, $password, $users) {
 	foreach ($users as &$user) {
@@ -39,7 +38,7 @@ if ($_SESSION["logged_in"] == false) {
 		if ($_SESSION["user"] != false) {
 			$_SESSION["logged_in"] = true;
 			if ($_POST['remember'] == "yes") {
-				setcookie("login", $_SESSION["user"]["login"], time()+60*60*24*7, "/php", "johnserrano.tech");
+				setcookie("login", $_SESSION["user"]["login"], time()+60*60*24*7, "/php", "siphan.tech");
 			}
 		} else {
 			$failed = true;
@@ -107,7 +106,5 @@ if ($_SESSION["logged_in"] == false) {
 	  </div>
 	</div>
 </body>
-
-
 
 </html>

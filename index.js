@@ -52,8 +52,8 @@ function moreStatuses() {
 
 function no_more_statuses() {
   console.log("404");
-  //remove load more button
-  //add some sort of message
+  // Remove load more button
+  // Add explanatory message
 }
 
 function init_more_statuses_button() {

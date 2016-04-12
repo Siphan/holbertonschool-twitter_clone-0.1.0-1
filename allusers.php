@@ -6,7 +6,7 @@
 <html lang="en-US">
 
 <head>
-	<title>NotTwitter</title>
+	<title>Siphan</title>
 	<meta charset="UTF-8">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>

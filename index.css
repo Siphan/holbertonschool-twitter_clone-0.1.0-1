@@ -10,7 +10,7 @@ border-radius: 0 !important;
 body {
   padding-top: 70px;
   padding-bottom: 20px;
-  background-color: #ffcc77;
+  background-color: #e8e8e8;
 }
 
 .alert-danger {
@@ -66,11 +66,11 @@ body {
 }
 
 .well {
-  background-color: #eebb55;
-  border-color: #cc9933;
+  background-color: #96CEFF;
+  border-color: #e8e8e8;
 }
 
 #notification-bar {
-  background-color: #ec971f;
+  background-color: #0A74F0;
   border-color: #985f0d;
 }
